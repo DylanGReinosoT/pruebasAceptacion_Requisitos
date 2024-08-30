@@ -8,7 +8,8 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = "src/test/java/features",
-        glue = {"seleniumgluecode"}
+        glue = {"seleniumgluecode"},
+        plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"}
 )
 
 
